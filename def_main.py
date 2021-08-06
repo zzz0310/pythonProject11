@@ -1,4 +1,4 @@
-#登录
+#登录1
 def login():
     from ruamel import yaml
     username_input = input('请输入用户名：')
@@ -77,7 +77,6 @@ def book_del():
         print('没有找到你要')
 #查找图书
 def book_search():
-    from defs import indexs
     from ruamel import yaml
     with open('book_list.yaml', 'r', encoding='utf-8') as f:
         book_list_ku = yaml.load(f.read(), Loader=yaml.Loader)
